@@ -10,7 +10,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class ExcelRead {
-    public static String EXCELREAD="userdata.xlsx";
+    public static String EXCELREAD="src/test/resources/userdata.xlsx";
     public static Object[][] readExcel(String sheetname){
         try(FileInputStream fis=new FileInputStream(EXCELREAD);
             Workbook workbook=new XSSFWorkbook(fis)){
