@@ -27,7 +27,7 @@ public class SearchProduct {
     By price_loc=By.xpath("//span[normalize-space()='Rs. 400']");
     By quantity_loc=By.xpath("//input[@id='quantity']");
     By addtocart_btn_loc=By.xpath("//button[contains(@class,'btn btn-default cart')]");
-    
+
 
     By continue_shopping_loc=By.xpath("");
     public void searchProductShirt(String product) throws InterruptedException {

@@ -5,17 +5,8 @@ import org.testng.annotations.Test;
 import pages.UserRegistrationPage;
 import utils.DataProviders;
 
-public class UserRegistrationTest {
-    UserRegistrationPage userRegistrationPage;
-    WebDriver driver;
-    @BeforeClass
-    public void setUp(){
+public class UserRegistrationTest extends BaseTest {
 
-        driver=new ChromeDriver();
-        driver.get("https://automationexercise.com/");
-
-        userRegistrationPage= new UserRegistrationPage(driver);
-    }
     @Test(priority = 1, dataProvider = "registrationData", dataProviderClass = DataProviders.class)
     public void registerTest(String username, String email, String password,
                              String firstname, String lastname, String company,

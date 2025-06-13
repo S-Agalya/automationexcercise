@@ -7,9 +7,18 @@ public class DataProviders {
         return ExcelRead.readExcel("RegistrationData");
     }
 
-//    @DataProvider(name = "loginData")
-//    public Object[][] getLoginData() {
-//
-//        return ExcelRead.readExcel("LoginData");
-//    }
+    @DataProvider(name = "loginData")
+    public Object[][] getLoginData() {
+
+        return ExcelRead.readExcel("LoginData");
+    }
+
+    //productData
+
+    @DataProvider(name = "productData")
+    public Object[][] getProductData() {
+
+        return ExcelRead.readExcel("productData");
+    }
+
 }
